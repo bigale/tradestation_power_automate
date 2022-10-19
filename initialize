@@ -1,0 +1,28 @@
+Variables.CreateNewList List=> Strategy
+SET symbol_lookup TO $'''True'''
+SET fixed_inputs TO $'''False'''
+SET new_chart TO $'''True'''
+SET format_strategies TO $'''False'''
+SET BegDate TO 1090101
+SET EndDate TO 1221231
+SET LongOnly TO $'''false'''
+SET NumContracts TO 1
+SET PctStopLoss TO 5
+Variables.CreateNewList List=> fixed_parameters
+Variables.AddItemToList Item: $'''BegDate''' List: fixed_parameters
+Variables.AddItemToList Item: $'''EndDate''' List: fixed_parameters
+Variables.AddItemToList Item: $'''LongOnly''' List: fixed_parameters
+Variables.AddItemToList Item: $'''NumContracts''' List: fixed_parameters
+Variables.AddItemToList Item: $'''PctStopLoss''' List: fixed_parameters
+IF DailyStrategies = $'''True''' THEN
+    Variables.AddItemToList Item: $'''Bollinger Bands LE''' List: Strategy
+    Variables.AddItemToList Item: $'''Bollinger Bands SE''' List: Strategy
+END
+IF IntradayStrategies = $'''True''' THEN
+    Variables.AddItemToList Item: $'''Gap Down SE''' List: Strategy
+    Variables.AddItemToList Item: $'''Gap Up LE''' List: Strategy
+END
+IF WFOStrategies = $'''True''' THEN
+    Variables.AddItemToList Item: $'''Profit Target LX''' List: Strategy
+    Variables.AddItemToList Item: $'''Profit Target SX''' List: Strategy
+END
