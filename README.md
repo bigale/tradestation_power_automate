@@ -1,16 +1,17 @@
 # tradestation_power_automate
 
-# Purpose: Automate TradeStation UI using Microsoft Power Automate.
+## Purpose: Automate TradeStation UI using Microsoft Power Automate.
 
-# Scripts are focused on optimizing strategies but various other activities will be added.
-# I started working on these before I knew about the Optimization API so this is not really neceassary.
-# Nevertheless the code is here to demonstrate the decent UI automation concepts.
+### Scripts are focused on optimizing strategies but various other activities will be added.
+### I started working on these before I knew about the Optimization API so this is not really neceassary.
+### Nevertheless the code is here to demonstrate the decent UI automation concepts.
 
 - Navigation with the command control
 - Clicking buttons
 - Scraping data from window controls to guide the scenarios
 - Segmenting flow into subflows
 
+# Follow this procedure to get the code operational
 - Create a new subflow for each file in this repository using Power Automate.
 - Name each subflow the same as the name of the file here.
 - Copy and paste the code from here to the matching subflow after selecting the subflow in Power Automate.
