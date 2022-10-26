@@ -1,0 +1,7 @@
+<commands>
+  <open name="jobs"/>
+  <delete path="Jobs"/>
+  <close></close>
+  <run file="strategy_inputs_loop.xq"/>
+  <run file="write_job_files.xq"/>
+</commands>
