@@ -1,0 +1,5 @@
+<commands>
+<set option='PARSER '>csv</set>
+<create-db name='study_list'>c:\Temp\study_list.csv</create-db>
+
+</commands>

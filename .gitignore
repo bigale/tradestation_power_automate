@@ -1,0 +1,4 @@
+basex/data/
+basex/webapp/static/ts/jobs/*.*
+basex/webapp/static/ts/results/*.*
+basex/webapp/static/ts/strategies/*.*

@@ -1,0 +1,7 @@
+<commands>
+  <create-db name="SelectedStrategies"/>
+  <!-- <open name="SelectedStrategies"/>
+  <delete path="SelectedStrategies"/>
+  <close></close> -->
+  <run file="select_strategies.xq"/>
+</commands>
